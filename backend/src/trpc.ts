@@ -6,7 +6,8 @@ const ideas = [
   { nick: 'cool-idea-nick-3', name: 'Idea 3', description: 'Idea 3 description...' },
 ]
 
-const trpc = initTRPC.create()
+
+ const trpc = initTRPC.create()
 
 export const trpcRouter = trpc.router({
   getIdeas: trpc.procedure.query(() => {
